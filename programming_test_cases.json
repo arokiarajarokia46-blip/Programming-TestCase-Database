@@ -1,0 +1,306 @@
+{
+    "PAL001": {
+        "problem": "Palindrome",
+        "description": "Check whether a string reads the same forward and backward.",
+        "input_format": "One string per line.",
+        "output_format": "true or false",
+        "test_cases": [
+            {
+                "id": "TC01",
+                "input": "LEVEL\n",
+                "expected": "true",
+                "type": "normal"
+            },
+            {
+                "id": "TC02",
+                "input": "HELLO\n",
+                "expected": "false",
+                "type": "normal"
+            },
+            {
+                "id": "TC03",
+                "input": "A\n",
+                "expected": "true",
+                "type": "edge"
+            },
+            {
+                "id": "TC04",
+                "input": "\n",
+                "expected": "true",
+                "type": "edge"
+            },
+            {
+                "id": "TC05",
+                "input": "ABCA\n",
+                "expected": "false",
+                "type": "edge"
+            }
+        ]
+    },
+    "FAC001": {
+        "problem": "Factorial",
+        "description": "Calculate the factorial of a non-negative integer.",
+        "input_format": "One integer.",
+        "output_format": "Factorial value or INVALID.",
+        "test_cases": [
+            {
+                "id": "TC01",
+                "input": "0\n",
+                "expected": "1",
+                "type": "edge"
+            },
+            {
+                "id": "TC02",
+                "input": "1\n",
+                "expected": "1",
+                "type": "edge"
+            },
+            {
+                "id": "TC03",
+                "input": "5\n",
+                "expected": "120",
+                "type": "normal"
+            },
+            {
+                "id": "TC04",
+                "input": "10\n",
+                "expected": "3628800",
+                "type": "normal"
+            },
+            {
+                "id": "TC05",
+                "input": "-1\n",
+                "expected": "INVALID",
+                "type": "invalid"
+            }
+        ]
+    },
+    "PRM001": {
+        "problem": "Prime Number",
+        "description": "Determine whether an integer is prime.",
+        "input_format": "One integer.",
+        "output_format": "true or false",
+        "test_cases": [
+            {
+                "id": "TC01",
+                "input": "2\n",
+                "expected": "true",
+                "type": "edge"
+            },
+            {
+                "id": "TC02",
+                "input": "7\n",
+                "expected": "true",
+                "type": "normal"
+            },
+            {
+                "id": "TC03",
+                "input": "10\n",
+                "expected": "false",
+                "type": "normal"
+            },
+            {
+                "id": "TC04",
+                "input": "1\n",
+                "expected": "false",
+                "type": "edge"
+            },
+            {
+                "id": "TC05",
+                "input": "-5\n",
+                "expected": "false",
+                "type": "invalid"
+            }
+        ]
+    },
+    "REV001": {
+        "problem": "String Reversal",
+        "description": "Reverse the characters of a given string.",
+        "input_format": "One string per line.",
+        "output_format": "Reversed string.",
+        "test_cases": [
+            {
+                "id": "TC01",
+                "input": "HELLO\n",
+                "expected": "OLLEH",
+                "type": "normal"
+            },
+            {
+                "id": "TC02",
+                "input": "ABC\n",
+                "expected": "CBA",
+                "type": "normal"
+            },
+            {
+                "id": "TC03",
+                "input": "A\n",
+                "expected": "A",
+                "type": "edge"
+            },
+            {
+                "id": "TC04",
+                "input": "\n",
+                "expected": "",
+                "type": "edge"
+            },
+            {
+                "id": "TC05",
+                "input": "12345\n",
+                "expected": "54321",
+                "type": "normal"
+            }
+        ]
+    },
+    "FIB001": {
+        "problem": "Fibonacci",
+        "description": "Find the nth Fibonacci number using zero-based indexing.",
+        "input_format": "One non-negative integer.",
+        "output_format": "Fibonacci value or INVALID.",
+        "test_cases": [
+            {
+                "id": "TC01",
+                "input": "0\n",
+                "expected": "0",
+                "type": "edge"
+            },
+            {
+                "id": "TC02",
+                "input": "1\n",
+                "expected": "1",
+                "type": "edge"
+            },
+            {
+                "id": "TC03",
+                "input": "2\n",
+                "expected": "1",
+                "type": "normal"
+            },
+            {
+                "id": "TC04",
+                "input": "10\n",
+                "expected": "55",
+                "type": "normal"
+            },
+            {
+                "id": "TC05",
+                "input": "-2\n",
+                "expected": "INVALID",
+                "type": "invalid"
+            }
+        ]
+    },
+    "SUM001": {
+        "problem": "Array Sum",
+        "description": "Calculate the sum of n integers.",
+        "input_format": "First line n, second line n integers.",
+        "output_format": "Sum of all integers.",
+        "test_cases": [
+            {
+                "id": "TC01",
+                "input": "3\n1 2 3\n",
+                "expected": "6",
+                "type": "normal"
+            },
+            {
+                "id": "TC02",
+                "input": "4\n-1 2 -3 4\n",
+                "expected": "2",
+                "type": "normal"
+            },
+            {
+                "id": "TC03",
+                "input": "1\n100\n",
+                "expected": "100",
+                "type": "edge"
+            },
+            {
+                "id": "TC04",
+                "input": "3\n0 0 0\n",
+                "expected": "0",
+                "type": "edge"
+            },
+            {
+                "id": "TC05",
+                "input": "5\n10 20 30 40 50\n",
+                "expected": "150",
+                "type": "normal"
+            }
+        ]
+    },
+    "SORT001": {
+        "problem": "Array Sorting",
+        "description": "Sort n integers in ascending order.",
+        "input_format": "First line n, second line n integers.",
+        "output_format": "Sorted integers separated by spaces.",
+        "test_cases": [
+            {
+                "id": "TC01",
+                "input": "4\n4 3 2 1\n",
+                "expected": "1 2 3 4",
+                "type": "normal"
+            },
+            {
+                "id": "TC02",
+                "input": "5\n5 1 5 2 2\n",
+                "expected": "1 2 2 5 5",
+                "type": "duplicates"
+            },
+            {
+                "id": "TC03",
+                "input": "4\n-5 3 -1 0\n",
+                "expected": "-5 -1 0 3",
+                "type": "negative"
+            },
+            {
+                "id": "TC04",
+                "input": "1\n99\n",
+                "expected": "99",
+                "type": "edge"
+            },
+            {
+                "id": "TC05",
+                "input": "3\n7 7 7\n",
+                "expected": "7 7 7",
+                "type": "duplicates"
+            }
+        ]
+    },
+    "GCD001": {
+        "problem": "Greatest Common Divisor",
+        "description": "Find the non-negative GCD of two integers.",
+        "input_format": "Two integers separated by a space.",
+        "output_format": "Non-negative GCD.",
+        "test_cases": [
+            {
+                "id": "TC01",
+                "input": "12 18\n",
+                "expected": "6",
+                "type": "normal"
+            },
+            {
+                "id": "TC02",
+                "input": "7 13\n",
+                "expected": "1",
+                "type": "normal"
+            },
+            {
+                "id": "TC03",
+                "input": "10 0\n",
+                "expected": "10",
+                "type": "edge"
+            },
+            {
+                "id": "TC04",
+                "input": "0 0\n",
+                "expected": "0",
+                "type": "edge"
+            },
+            {
+                "id": "TC05",
+                "input": "-12 18\n",
+                "expected": "6",
+                "type": "negative"
+            }
+        ]
+    }
+}

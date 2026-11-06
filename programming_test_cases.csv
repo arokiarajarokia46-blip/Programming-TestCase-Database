@@ -1,0 +1,91 @@
+problem_id,problem,description,input_format,output_format,id,input,expected,type
+PAL001,Palindrome,Check whether a string reads the same forward and backward.,One string per line.,true or false,TC01,"LEVEL
+",true,normal
+PAL001,Palindrome,Check whether a string reads the same forward and backward.,One string per line.,true or false,TC02,"HELLO
+",false,normal
+PAL001,Palindrome,Check whether a string reads the same forward and backward.,One string per line.,true or false,TC03,"A
+",true,edge
+PAL001,Palindrome,Check whether a string reads the same forward and backward.,One string per line.,true or false,TC04,"
+",true,edge
+PAL001,Palindrome,Check whether a string reads the same forward and backward.,One string per line.,true or false,TC05,"ABCA
+",false,edge
+FAC001,Factorial,Calculate the factorial of a non-negative integer.,One integer.,Factorial value or INVALID.,TC01,"0
+",1,edge
+FAC001,Factorial,Calculate the factorial of a non-negative integer.,One integer.,Factorial value or INVALID.,TC02,"1
+",1,edge
+FAC001,Factorial,Calculate the factorial of a non-negative integer.,One integer.,Factorial value or INVALID.,TC03,"5
+",120,normal
+FAC001,Factorial,Calculate the factorial of a non-negative integer.,One integer.,Factorial value or INVALID.,TC04,"10
+",3628800,normal
+FAC001,Factorial,Calculate the factorial of a non-negative integer.,One integer.,Factorial value or INVALID.,TC05,"-1
+",INVALID,invalid
+PRM001,Prime Number,Determine whether an integer is prime.,One integer.,true or false,TC01,"2
+",true,edge
+PRM001,Prime Number,Determine whether an integer is prime.,One integer.,true or false,TC02,"7
+",true,normal
+PRM001,Prime Number,Determine whether an integer is prime.,One integer.,true or false,TC03,"10
+",false,normal
+PRM001,Prime Number,Determine whether an integer is prime.,One integer.,true or false,TC04,"1
+",false,edge
+PRM001,Prime Number,Determine whether an integer is prime.,One integer.,true or false,TC05,"-5
+",false,invalid
+REV001,String Reversal,Reverse the characters of a given string.,One string per line.,Reversed string.,TC01,"HELLO
+",OLLEH,normal
+REV001,String Reversal,Reverse the characters of a given string.,One string per line.,Reversed string.,TC02,"ABC
+",CBA,normal
+REV001,String Reversal,Reverse the characters of a given string.,One string per line.,Reversed string.,TC03,"A
+",A,edge
+REV001,String Reversal,Reverse the characters of a given string.,One string per line.,Reversed string.,TC04,"
+",,edge
+REV001,String Reversal,Reverse the characters of a given string.,One string per line.,Reversed string.,TC05,"12345
+",54321,normal
+FIB001,Fibonacci,Find the nth Fibonacci number using zero-based indexing.,One non-negative integer.,Fibonacci value or INVALID.,TC01,"0
+",0,edge
+FIB001,Fibonacci,Find the nth Fibonacci number using zero-based indexing.,One non-negative integer.,Fibonacci value or INVALID.,TC02,"1
+",1,edge
+FIB001,Fibonacci,Find the nth Fibonacci number using zero-based indexing.,One non-negative integer.,Fibonacci value or INVALID.,TC03,"2
+",1,normal
+FIB001,Fibonacci,Find the nth Fibonacci number using zero-based indexing.,One non-negative integer.,Fibonacci value or INVALID.,TC04,"10
+",55,normal
+FIB001,Fibonacci,Find the nth Fibonacci number using zero-based indexing.,One non-negative integer.,Fibonacci value or INVALID.,TC05,"-2
+",INVALID,invalid
+SUM001,Array Sum,Calculate the sum of n integers.,"First line n, second line n integers.",Sum of all integers.,TC01,"3
+1 2 3
+",6,normal
+SUM001,Array Sum,Calculate the sum of n integers.,"First line n, second line n integers.",Sum of all integers.,TC02,"4
+-1 2 -3 4
+",2,normal
+SUM001,Array Sum,Calculate the sum of n integers.,"First line n, second line n integers.",Sum of all integers.,TC03,"1
+100
+",100,edge
+SUM001,Array Sum,Calculate the sum of n integers.,"First line n, second line n integers.",Sum of all integers.,TC04,"3
+0 0 0
+",0,edge
+SUM001,Array Sum,Calculate the sum of n integers.,"First line n, second line n integers.",Sum of all integers.,TC05,"5
+10 20 30 40 50
+",150,normal
+SORT001,Array Sorting,Sort n integers in ascending order.,"First line n, second line n integers.",Sorted integers separated by spaces.,TC01,"4
+4 3 2 1
+",1 2 3 4,normal
+SORT001,Array Sorting,Sort n integers in ascending order.,"First line n, second line n integers.",Sorted integers separated by spaces.,TC02,"5
+5 1 5 2 2
+",1 2 2 5 5,duplicates
+SORT001,Array Sorting,Sort n integers in ascending order.,"First line n, second line n integers.",Sorted integers separated by spaces.,TC03,"4
+-5 3 -1 0
+",-5 -1 0 3,negative
+SORT001,Array Sorting,Sort n integers in ascending order.,"First line n, second line n integers.",Sorted integers separated by spaces.,TC04,"1
+99
+",99,edge
+SORT001,Array Sorting,Sort n integers in ascending order.,"First line n, second line n integers.",Sorted integers separated by spaces.,TC05,"3
+7 7 7
+",7 7 7,duplicates
+GCD001,Greatest Common Divisor,Find the non-negative GCD of two integers.,Two integers separated by a space.,Non-negative GCD.,TC01,"12 18
+",6,normal
+GCD001,Greatest Common Divisor,Find the non-negative GCD of two integers.,Two integers separated by a space.,Non-negative GCD.,TC02,"7 13
+",1,normal
+GCD001,Greatest Common Divisor,Find the non-negative GCD of two integers.,Two integers separated by a space.,Non-negative GCD.,TC03,"10 0
+",10,edge
+GCD001,Greatest Common Divisor,Find the non-negative GCD of two integers.,Two integers separated by a space.,Non-negative GCD.,TC04,"0 0
+",0,edge
+GCD001,Greatest Common Divisor,Find the non-negative GCD of two integers.,Two integers separated by a space.,Non-negative GCD.,TC05,"-12 18
+",6,negative
